@@ -20,7 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-// Tal Peretz 312468929
+
 public class Main extends Application {
 
 	private FifaWorldCupFileManager fifa;
@@ -86,7 +86,7 @@ public class Main extends Application {
 		borderPane = new BorderPane();
 		borderPane.setTop(topMenu);
 		borderPane.setCenter(centerMenu);
-		borderPane.setAlignment(downMenu, Pos.BOTTOM_CENTER);
+		downMenu.setAlignment(Pos.CENTER);
 		borderPane.setBottom(downMenu);
 
 		Scene scene = new Scene(borderPane);
